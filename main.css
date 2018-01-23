@@ -7,7 +7,7 @@
 body { 
     font-size: 16px; 
     line-height: 32px;
-    font-family: cursive;
+    font-family: serif;
     color: cornflowerblue;
 }
 
@@ -25,7 +25,7 @@ h2 {
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: ;
+    max-width: 700px;
 }
 
 header, footer, footer a {
