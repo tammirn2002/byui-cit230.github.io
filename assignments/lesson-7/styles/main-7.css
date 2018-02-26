@@ -1,0 +1,201 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: 'Poiret One', cursive;
+    color: #857DB1;
+    font-weight: bold;
+    /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 80%;
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    color: #857DB1;
+    background-color: white;
+}
+
+/*------HEADER------*/
+
+header h1 {
+    font-size: 40px;
+    text-align: center;
+
+}
+
+header img {
+    display: flex;
+    float: left;
+    margin-right: 10px;
+    max-width: 95%;
+
+
+}
+
+header.subheading {
+    text-align: center;
+    font-size: 25px;
+}
+
+/*------NAV------*/
+
+nav {}
+
+nav button {}
+
+nav ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+    overflow: hidden;
+    background-color: #A199CD;
+
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    color: #020202;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    background-color: #2919A4;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #857DB1;
+
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*------MAIN------*/
+
+main {
+    max-width: 90%;
+}
+
+main h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+main figure {
+    margin: 0 0 .1rem 2%;
+    width: 96%;
+}
+
+main figure img {
+    width: 100%;
+
+}
+
+main section h3 {
+    text-align: center;
+}
+
+main section picture {
+    float: left;
+    margin-left: 10%;
+    margin: 1em;
+    max-width: 85%;
+}
+
+.wgallery {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*------SECTION------*/
+section {
+    text-align: center;
+    padding: 20px 1px 1px 1px;
+
+
+}
+
+section img {
+    float: left;
+    margin: 5px;
+    max-width: 95%;
+}
+
+section.wsum {
+    border-style: ridge;
+    border-width: 7px;
+    border-color: #A199CD;
+    padding-bottom: 2cm;
+    padding-top: 0.5cm;
+}
+
+section.forecast {
+    display: none;
+}
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    display: flex;
+    max-width: 95%;
+    padding: 0 0 10px 0;
+    /* fill the page in the small/phone view */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+/*------FOOTER------*/
+
+footer {
+    text-align: center;
+    background-color: #A199CD;
+    color: white;
+
+}
+
+footer aside {
+    font-size: 15px;
+    padding: 10px 0 0 0;
+    line-height: normal;
+}
+
+footer > p {
+    font-size: 12px;
+}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
