@@ -42,10 +42,11 @@
     </nav>
 
     <main>
+        <h2>Please fill out this form if you have experienced a recent whether event. This will help us keep track of the different things happening and also help to keep other users informed.</h2>
         <fieldset>
             <legend><span>Contact Information</span></legend>
             <label><span>Full Name</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z-._]{5,99}" required></label>
-            <label><span>email</span><input name="email" type="email" value="" placeholder="yourname@youremail.com"></label>
+            <label><span>Email</span><input name="email" type="email" value="" placeholder="yourname@youremail.com"></label>
             <label><span>Phone Number</span><input name="phonenum" type="tel" value="" placeholder="0000000000" pattern="[0-9]{10,20} required"></label>
             <label><span>Zip Code</span><input name="zipcode" type="number" value="" placeholder="00000" pattern="[0-9]{10,20} required"></label>
         </fieldset>
@@ -61,7 +62,7 @@
                 <option value="Tornado"></option>
             </datalist>
             </label>
-            <label for="rating">Severity Rating (1 to 10)</label>
+            <label>Severity Rating</label>
             <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
             <span id="ratingvalue">10</span><br>
             <label><span>Storm Region</span>
@@ -84,9 +85,10 @@
             </label>
         </fieldset>
         <input type="submit" value="Submit" class="suform">
-        <input name="redirect" type="hidden" value="thanks.html">
+        <input name="redirect" type="hidden" value="https://tammirn2002.github.io/assignments/lesson-8/thanks.html">
 
-        <input type="hidden" name="resulturl" value="url_here">
+
+
 
     </main>
 
@@ -95,7 +97,7 @@
             What's the Weather Outside?<br> 123 Maple Street Franklin, MU 83454<br> 888-867-5309
             <br> contact@theurl.com
         </aside>
-        <p class="footer-bar">&copy;2017 All Rights Reserved | What's the Weather Outside? | <span id="currentdate">February 2018</span></p>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | What's the Weather Outside? | <span id="currentdate">February 2018</span></p>
     </footer>
 
     <script src="scripts/hamburger.js"></script>

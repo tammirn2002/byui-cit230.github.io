@@ -65,6 +65,9 @@ nav ul {
     padding: 1px;
     overflow: hidden;
     background-color: #A199CD;
+    margin: 1.5em 0;
+    border: #a199CD solid 2px;
+
 
 }
 
@@ -184,6 +187,9 @@ footer {
     text-align: center;
     background-color: #A199CD;
     color: white;
+    border: #2919A4 solid 2px;
+    border-radius: .4em;
+
 
 }
 
@@ -195,6 +201,45 @@ footer aside {
 
 footer > p {
     font-size: 12px;
+    border-radius: .4em;
+}
+
+/*------FORM-----*/
+
+fieldset {
+    background-color: white;
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: #2919A4 solid 2px;
+}
+
+legend {
+    color: #2919A4;
+    margin-left: 6%;
+    padding: .5em border: #2919A4 solid 2px;
+    background-color: white;
+    border-radius: .4em;
+    font-size: 2em;
+}
+
+label {
+    display: grid;
+    grid-gap: 1.3em;
+    grid-template-columns: 1fr 1fr;
+    margin: .5em;
+}
+
+label span {
+    display: grid;
+    font-size: 1.3em;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+input.suform {
+    box-shadow: 5px 5px 10px #2919A4;
+
+
 }
 
 /* This structure refers to p elements that are direct children of the footer element */
