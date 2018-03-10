@@ -32,7 +32,7 @@
     <nav>
         <button onclick="toggleNavMenu()">&#9776;</button>
         <ul id="patty" class="hide">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="franklin.html">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
             <li><a href="#">Springfield</a></li>
@@ -49,7 +49,7 @@
                 <fieldset>
                     <legend><span>Contact Information</span></legend>
                     <label><span>Full Name</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z-._]{5,99}" required></label>
-                    <label><span>Email</span><input name="email" type="email" value="" placeholder="yourname@youremail.com"></label>
+                    <label><span>Email</span><input name="email" type="email" value="" placeholder="yourname@domain.com"></label>
                     <label><span>Phone Number</span><input name="phonenum" type="tel" value="" placeholder="0000000000" pattern="[0-9]{10,20} required"></label>
                     <label><span>Zip Code</span><input name="zipcode" type="number" value="" placeholder="00000" pattern="[0-9]{10,20} required"></label>
                 </fieldset>
@@ -67,7 +67,7 @@
             </label>
                     <label>Severity Rating</label>
                     <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">10</span><br>
+                    <span id="ratingvalue">10</span>
                     <label><span>Storm Region</span>
             <select name="stormregion">
                 <option value ="Select Region" disabled>Select Region</option>

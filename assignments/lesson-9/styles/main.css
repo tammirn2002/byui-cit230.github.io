@@ -55,7 +55,9 @@ header.subheading {
 
 /*------NAV------*/
 
-nav {}
+nav {
+    text-align: left;
+}
 
 nav button {}
 
@@ -71,9 +73,6 @@ nav ul {
 
 }
 
-nav ul li {
-    text-align: center;
-}
 
 nav ul li a {
     display: block;
@@ -211,6 +210,8 @@ fieldset {
     border-radius: .8em;
     margin: 1.5em 0;
     border: #2919A4 solid 2px;
+    padding-left: 1em;
+
 }
 
 legend {
@@ -220,6 +221,7 @@ legend {
     background-color: white;
     border-radius: .4em;
     font-size: 2em;
+    padding5em;
 }
 
 label {
