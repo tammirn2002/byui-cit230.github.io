@@ -52,22 +52,22 @@
 
         <section class="wsum">
             <h3>Weather Summary</h3>
-            <picture>
-                <img src="images/franklin-rain.jpeg" alt="rain" width="400" height="265">
-            </picture>
+
             <div class="highlow">
                 <p>High:<span id="hightemp">65</span> &deg;F</p>
                 <p>Low: <span id="lowtemp">36</span> &deg;F</p>
             </div>
             <div class="conditions">
-                <p>Precipitation: 60%</p>
+                <p>Precipitation: <span id="precip"></span>%</p>
                 <p>Wind Speed: <span id="wspeed">17</span>mph</p>
             </div>
             <div class="windchill">
                 <p>Windchill: <span id="windchill"></span> &deg;F</p>
             </div>
             <div class="current">
-                Cloudy with a 35% chance of rain
+                <img id="weathericon" src="" alt="Weather Icon" class="center"><br>
+                <p><span id="currentW"></span></p>
+
             </div>
         </section>
 
@@ -124,7 +124,7 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <!--<script src="scripts/windchill.js"></script>-->
     <script src="scripts/wuweather-f.js"></script>
 
 </body>

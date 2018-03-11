@@ -158,7 +158,13 @@ section.wsum {
     padding-bottom: 2cm;
     padding-top: 0.5cm;
 }
+section.wsum img {
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    w
 
+}
 section.forecast {
     display: none;
 }
@@ -221,7 +227,7 @@ legend {
     background-color: white;
     border-radius: .4em;
     font-size: 2em;
-    padding5em;
+    padding .5em;
 }
 
 label {
