@@ -7,7 +7,6 @@ currentcond.send();
 currentcond.onload = function () {
     var fweather = JSON.parse(currentcond.responseText);
     console.log(fweather);
-    document.getElementById('place').innerHTML = fweather.current_observation.display_location.city;
     document.getElementById('hightemp').innerHTML = fweather.current_observation.temp_f;
     document.getElementById('weathericon').src = fweather.current_observation.icon_url;
     document.getElementById('currentW').innerHTML = fweather.current_observation.weather;
@@ -16,13 +15,16 @@ currentcond.onload = function () {
     document.getElementById('precip').innerHTML = fweather.current_observation.precip_1hr_in;
 
 }
+//forecast conditions
 
 var curconditions = new XMLHttpRequest();
 curconditions.open("GET", "http://api.wunderground.com/api/ffbb53a904bff0c1/forecast/q/MN/Franklin/json", true);
 curconditions.send();
 
 curconditions.onload = function () {
-    var text = JSON.parse(curconditions.responseText);
+    var curcon = JSON.parse(curconditions.responseText);
     console.log(text);
-    document.getElementById('weathercond').innerHTML = text.forecast.txt_forecast.forecastday["0"].fcttext;
+    document.getElementById('weathercond').innerHTML = curcon.forecast.txt_forecast.forecastday["0"].fcttext;
+    document.getElementById('lowtemp').innerHTML = curcon.forecast.simpleforecast.forecastday["0"].low.fahrenheit;
+
 }
