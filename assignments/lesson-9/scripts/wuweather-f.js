@@ -7,12 +7,14 @@ currentcond.send();
 currentcond.onload = function () {
     var fweather = JSON.parse(currentcond.responseText);
     console.log(fweather);
+    document.getElementById('place').innerHTML = fweather.current_observation.display_location.city;
     document.getElementById('hightemp').innerHTML = fweather.current_observation.temp_f;
     document.getElementById('weathericon').src = fweather.current_observation.icon_url;
     document.getElementById('currentW').innerHTML = fweather.current_observation.weather;
     document.getElementById('wspeed').innerHTML = fweather.current_observation.wind_mph;
     document.getElementById('windchill').innerHTML = fweather.current_observation.windchill_f;
     document.getElementById('precip').innerHTML = fweather.current_observation.precip_1hr_in;
+
 }
 
 var curconditions = new XMLHttpRequest();
