@@ -18,7 +18,7 @@
         display: block;
     }
 
-  .wgallery {
+    .wgallery {
         grid-gap: 2rem;
         grid-template-columns: 1fr 1fr;
         max-width: 90%;
@@ -49,16 +49,18 @@
     /* show the 10-day forecast with the medium view and up */
     article p.town-article img {
         width: 62%;
-        float: right;
+        max-height: 62%;
+        flex: auto;
         padding: 0 0 0 10px;
     }
     /* responsive images */
 }
 
-.highlow, .conditions {
+.highlow,
+.conditions {
     display: grid;
     grid grid-gap: 1rem;
     grid grid-template-columns: 1fr 1fr 1fr;
     max-width: 85%;
     margin: auto;
-    }
+}

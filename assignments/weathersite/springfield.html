@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What's the Weather Outside</title>
+    <meta name="author" content="Tammi L. Higley">
+    <meta name="description" content="Website for what's happening in Franklin, including the weather and local news.">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+        <img src="images/springfield_blue_butterfly.jpeg" alt="Blue Butterfly" width="200" height="133">
+        <h1>What's the Weather Outside?</h1>
+        <div class="subheading">Small Town Living At Its Finest</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="patty" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li class="active"><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <figure>
+            <picture>
+                <img src="images/springfield_dog_in_woods.jpeg" alt="Springtime Springfield">
+            </picture>
+
+        </figure>
+        <h2><span id="place">City</span></h2>
+
+        <section class="wsum">
+            <h3>Weather Summary</h3>
+
+            <div class="highlow">
+                <p>High Temperature: <span id="hightemp"></span> &deg;F</p>
+                <p>Low Temperature: <span id="lowtemp"></span> &deg;F</p>
+
+            </div>
+            <div class="conditions">
+                <p>Precipitation: <span id="precip"></span>%</p>
+                <p>Wind Speed: <span id="wspeed"></span>mph </p>
+            </div>
+            <div class="windchill">
+                <p>Windchill: <span id="windchill"></span> &deg;F</p>
+            </div>
+            <div class="current">
+                <img id="weathericon" src="" alt="Weather Icon"><br>
+                <p><span id="currentW"></span></p>
+            </div>
+            <div class="forecast">
+                <h2>Forecast</h2>
+                <p><span id="weatherfore"></span></p>
+            </div>
+        </section>
+
+
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>65&deg;F</td>
+                        <td>50&deg;F</td>
+                        <td>70&deg;F</td>
+                        <td>32&deg;F</td>
+                        <td>50&deg;F</td>
+                        <td>55&deg;F</td>
+                        <td>45&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>49&deg;F</td>
+                        <td>56&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3>A Place to Take Your Pets</h3>
+            <p class="town-article">
+                <img src="images/springfield_dog_on_bridge.jpeg" alt="Dog on bridge" width="500" height="333"> Lorem ipsum dolor sit amet, ne mea verear percipitur, inani oporteat aliquando cu quo. Error tollit albucius ea qui, mel adipiscing assueverit ex, diceret inimicus efficiantur id eam. Meliore consetetur mea no. Duo possit recusabo voluptaria an, vidit elaboraret concludaturque ex usu.
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            What's the Weather Outside?<br> 123 Maple Street Franklin, MU 83454<br> 888-867-5309
+            <br> contact@theurl.com
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | What's the Weather Outside? | <span id="currentdate">February 2018</span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <!--<script src="scripts/windchill.js"></script>-->
+    <script src="scripts/wuweather-s.js"></script>
+
+</body>
+
+</html>

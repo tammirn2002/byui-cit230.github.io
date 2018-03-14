@@ -177,6 +177,9 @@ article p.town-article img {
 
 }
 
+.smalltownpics:hover {
+    box-shadow: 5px 5px 10px grey;
+}
 
 h3 {
     text-align: center;
