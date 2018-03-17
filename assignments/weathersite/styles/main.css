@@ -253,6 +253,35 @@ input.subutton {
 
 /*------INDEX------*/
 
+section.cityInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+franklin h1, greenville h1, springfield h1 {
+    font-size: 26px;
+    margin: 3px;
+}
+franklin h2, greenville h2, springfield h2 {
+    font-size: 20px;
+    margin: 3px;
+    text-align: center;
+}
+
+
+franklin p { margin: 3px; font-size: 16px;}
+franklin p ul {margin: 5px;}
+
+
+greenville p { margin: 3px; font-size: 16px;}
+greenville p ul {margin: 5px;}
+
+
+springfield p { margin: 3px; font-size: 16px;}
+springfield p ul {margin: px;}
+
+
 
 
 /* This structure refers to p elements that are direct children of the footer element */
