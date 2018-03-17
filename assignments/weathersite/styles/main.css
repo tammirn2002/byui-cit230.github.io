@@ -49,6 +49,7 @@ header img {
 }
 
 header.subheading {
+    float: left;
     text-align: center;
     font-size: 25px;
 }
@@ -63,6 +64,7 @@ nav button {}
 
 nav ul {
     list-style-type: none;
+    text-align: center;
     margin: 1px;
     padding: 1px;
     overflow: hidden;
