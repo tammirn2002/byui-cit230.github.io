@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="Tammi L. Higley">
+    <meta name="description" content="Retail store that specializes in bicylces">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo2.jpg" alt="The Mountain Spoke logo" width="200" height="133">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">The hub for all your bicycle needs.</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="patty" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adventure_tours.html">Adventure Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="mainintro">
+        <img src="images/biketrail.jpeg" alt="Bike Trail">
+        <iframe width="400" height="266" src="https://www.youtube.com/embed/cCZt_lIdnz8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+        <section id="pagecontents">
+            <div id="salserv">
+                <img src="images/peakbikeshop.jpg" alt="bikeshop">
+                <h2>A bike shop for all your needs</h2>
+                <p>Grasp life by the handlebars. The Mountain Spoke is the spot to buy the latest and greatest mountain bikes and accesories. </p>
+                <a id="saleslink" href="sales.html">Sales</a>
+                <p>There are also many services offered in our shop for those bikes who need a little TLC.</p>
+                <a id="servicelink" href="service.html">Service</a>
+            </div>
+
+            <div id="tours">
+                <img src="images/trailbike2.jpeg" alt="Mountain Trail Bike">
+                <h2>Riding Tours</h2>
+                <p>Sign up to join our well trained staff on some of the best trails around Bozeman. These tours only have so many spots, so sign up early.</p>
+                <a id="tourlink" href="adventure_tours.html">Adventure Tours</a>
+            </div>
+            <div id="events">
+                <img src="images/greatdivide.jpg" alt="The Great Divide">
+                <h2>Cycle the Great Divide</h2>
+                <p>Celebrate the Great Divide Mountain Bike Route’s 20th birthday with an entry into this tour. Spaces fill up quickly, so don't hesitate.</p>
+                <a id="eventslink" href="events.html">Events</a>
+            </div>
+        </section>
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | 3950 Valley Commons Drive | Bozeman, MT | <a href="resources.html">Resources</a> | <a href="video.html">Video</a></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/active.js"></script>
+
+
+</body>
+
+</html>

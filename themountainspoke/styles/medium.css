@@ -1,0 +1,118 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    header {
+        display: grid;
+        grid-gap: 1.3em;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    /*------NAV------*/
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    /*------CONTACT-MAIN------*/
+    main #contactinfo {
+        display: grid;
+        grid-gap: 1.3em;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    main #contactheader {
+        padding: 0 0 20px 0;
+    }
+
+    main #contdiv {
+        display: grid;
+        grid-gap: 1.3em;
+        grid-template-columns: 1fr 1fr;
+        margin: 1em;
+    }
+
+
+    /*------EVENTS------*/
+    .greatdiv {
+        padding-top: 130px;
+    }
+    .greatmap {
+        padding: 150px 0 0 0;
+    }
+
+    main #contdiv {
+        display: grid;
+        grid-gap: 1.3em;
+        grid-template-columns: 1fr 1fr;
+        margin: 1em;
+    }
+
+    /*------SALES------*/
+    #bikesales {
+        display: grid;
+        grid-gap: 1.3em;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: .3em;
+    }
+
+    /*------SERVICE------*/
+    #servicemain {
+        display: grid;
+        grid-gap: 1.3em;
+        grid-template-columns: 1fr 1fr;
+        margin: .3em;
+    }
+
+
+
+    /*----ADVENTURE_TOURS----*/
+    main #mountaintour1,
+    #mountaintour2 {
+        display: grid;
+        grid-gap: 1.3em;
+        grid-template-columns: 1fr 1fr;
+        margin: 1em;
+
+    }
+
+    main #mountaintour1,
+    #mountaintour2 {
+        border: 3px solid #1B385B;
+        box-shadow: 5px 5px 10px #1B385B;
+    }
+
+    main #mtntour1,
+    #mtntour2 {
+        padding: 5px;
+    }
+
+
+    #tourdescription {
+        text-align: left;
+        color: #092240;
+    }
+
+    #mtntourimg1,
+    #mtntourimg2 {
+        padding-top: 5%;
+    }
+
+    /*------INDEX------*/
+    #pagecontents {
+        display: grid;
+        grid-gap: 1.3em;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 1em;
+    }

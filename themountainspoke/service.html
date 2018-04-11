@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="Tammi L. Higley">
+    <meta name="description" content="Retail store that specializes in bicylces">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo2.jpg" alt="The Mountain Spoke logo" width="200" height="133">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">The hub for all your bicycle needs.</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="patty" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adventure_tours.html">Adventure Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <main>
+
+        <h3>**Labor is based on $60.00 per hour with a minimum services fee $10.00 Parts are not included**</h3>
+        <h2>Labor Rates</h2>
+        <section id="servicemain">
+            <table id="servicetable1">
+                <tr>
+                    <th>Tune Up Services</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Late Break-in Tune-Up After 60 up to first year</td>
+                    <td><span id="lbtuneup"></span></td>
+                </tr>
+                <tr>
+                    <td>Tune-up (geared)</td>
+                    <td><span id="gtuneup"></span></td>
+                </tr>
+                <tr>
+                    <td>Tune-up (single spd/freestyle)</td>
+                    <td><span id="ssptuneup"></span></td>
+                </tr>
+                <tr>
+                    <td>Super Tune-up (includes drive train cleaning)</td>
+                    <td><span id="suptuneup"></span></td>
+                </tr>
+                <tr>
+                    <td>Drivetrain Tuneup</td>
+                    <td><span id="dtuneup"></span></td>
+                </tr>
+            </table>
+
+            <table id="servicetable2">
+                <tr>
+                    <th>Tire Services</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Flats on bike</td>
+                    <td><span id="bflat"></span></td>
+                </tr>
+                <tr>
+                    <td>Front Hub Overhaul</td>
+                    <td><span id="fhoverhaul"></span></td>
+                </tr>
+                <tr>
+                    <td>True Wheel</td>
+                    <td><span id="twheel"></span></td>
+                </tr>
+                <tr>
+                    <td>Install Spoke</td>
+                    <td><span id="ispoke"></span></td>
+                </tr>
+                <tr>
+                    <td>Wheel Slime</td>
+                    <td><span id="wslime"></span></td>
+                </tr>
+            </table>
+
+            <table id="servicetable3">
+                <tr>
+                    <th>Installation Services</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Install Saddle/Seat</td>
+                    <td><span id="isseat"></span></td>
+                </tr>
+                <tr>
+                    <td>Install Chain</td>
+                    <td><span id="ichain"></span></td>
+                </tr>
+                <tr>
+                    <td>Install Fenders</td>
+                    <td><span id="ifenders"></span></td>
+                </tr>
+                <tr>
+                    <td>Install Headset</td>
+                    <td><span id="iheadset"></span></td>
+                </tr>
+                <tr>
+                    <td>Install Rear Shock</td>
+                    <td><span id="irshock"></span></td>
+                </tr>
+                <tr>
+                    <td>Install Pedals</td>
+                    <td><span id="ipedals"></span></td>
+                </tr>
+
+            </table>
+
+            <table id="servicetable4">
+                <tr>
+                    <th>Brake Services</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Install Rotor</td>
+                    <td><span id="irotor"></span></td>
+                </tr>
+                <tr>
+                    <td>Bleed Hydraulic Disc Brake</td>
+                    <td><span id="bleedhdb"></span></td>
+                </tr>
+                <tr>
+                    <td>Install Brake Levers</td>
+                    <td><span id="ilever"></span></td>
+                </tr>
+                <tr>
+                    <td>Install Hydraulic Disc Brakes</td>
+                    <td><span id="ihbrakes"></span></td>
+                </tr>
+                <tr>
+                    <td>Install Mechanical Disc Brakes</td>
+                    <td><span id="imbrakes"></span></td>
+                </tr>
+                <tr>
+                    <td>Install Rim Brake Set</td>
+                    <td><span id="ibset"></span></td>
+                </tr>
+
+            </table>
+
+
+
+        </section>
+    </main>
+    <footer>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | 3950 Valley Commons Drive | Bozeman, MT | <a href="resources.html">Resources</a> | <a href="video.html">Video</a></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/active.js"></script>
+    <script src="scripts/repairjs.js"></script>
+
+
+</body>
+
+</html>

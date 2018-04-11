@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="Tammi L. Higley">
+    <meta name="description" content="Retail store that specializes in bicylces">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo2.jpg" alt="The Mountain Spoke logo" width="200" height="133">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">The hub for all your bicycle needs.</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="patty" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adventure_tours.html">Adventure Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Cycle the Great Divide</h2>
+        <section id="contdiv">
+            <div class="grdivinfo">
+                <p>The American cycling Dream: crossing the United States by bicycle. Many riders have cycled the United States from East to West or the other way around. Of course, a great achievement. </p>
+                <p>It is probably a bigger challenge to traverse the United States from North to South over the forest roads of the Rocky Mountains, following the Continental Divide. The divide of roughly 2,800 miles between Canada and Mexico splits the North American Continent in two. </p>
+                <p>The tour starts June 15 and costs $9600 for the entire route. The entry fee includes:</p>
+                <ul>
+                    <li>Accommodation is based on camp sites and motels ( minimal 17 nights ) during the tour</li>
+                    <li>One night hotel accommodation before the start in Canmore and after the finish in Tucson</li>
+                    <li>Breakfast, lunch and meal at arrival ( during cycling days )</li>
+                    <li>Fruit, water, sport drinks and energy bars ( during cycling days )</li>
+                    <li>Dinner during cycling days if we are camping</li>
+                    <li>Transportation of luggage</li>
+                    <li>Organization of the journey</li>
+                    <li>Support by bike mechanic</li>
+                    <li>“The Great Divide” cycling jersey</li>
+                    <li>Full set of maps of the Adventure Cycling Association</li>
+                    <li>Tour guide with information about the route</li>
+                    <li>DVD with compilation of the best pictures</li>
+                    <li>Communal transport between the finish of The Great Divide in Antelope Wells and the hotel in Tucson</li>
+                </ul>
+
+
+            </div>
+            <div class="greatmap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d25098011.843006004!2d-130.00571266447608!3d39.83564687187403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e1!4m5!1s0x5370ca45910c4afd%3A0xcaafaebedaac9463!2sBanff%2C+Alberta%2C+Canada!3m2!1d51.178362899999996!2d-115.57076939999999!4m5!1s0x86dbbf586c0d6335%3A0x551e75b07e243f13!2sAntelope+Wells%2C+New+Mexico+88040!3m2!1d31.348998299999998!2d-108.5089278!5e0!3m2!1sen!2sus!4v1523205176774" width="450" height="600" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="greatdiv">
+                <img src="images/great_divide.png" alt="The Great Divide" width="353" height="300">
+            </div>
+
+            <div class="registrationform">
+                <form action="thank_you.html" method="get" enctype="multipart/form-data" name="regform" id="regiform">
+
+                    <fieldset>
+                        <legend><span id="formheader">Registration Form</span></legend>
+                        <label><span>Full Name</span><input name="fullname" type="text" value="" placeholder="Full Name" ></label>
+                        <label><span>Email</span><input name="email" type="email" value="" placeholder="yourname@domain.com" ></label>
+                        <label><span>Phone Number</span><input name="phonenum" type="tel" value="" placeholder="0000000000" ></label>
+                        <label><span>Date of Birth</span><input name="dob" type="date"></label>
+                        <label><span>Home State or Country</span><input name="place" type="text" value="" placeholder="Home State or Country"></label>
+                        <label><span>Addtional Information</span>
+                        <textarea rows="4" cols="50" placeholder="Additional Information"></textarea>
+                        </label><br>
+                        <input type="submit" value="Submit" class="subutton">
+                        <input type="hidden" value="Registration Form" name="subject">
+                        <input name="redirect" type="hidden" value="thank_you.html">
+                    </fieldset>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | 3950 Valley Commons Drive | Bozeman, MT | <a href="resources.html">Resources</a> | <a href="video.html">Video</a></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/active.js"></script>
+
+</body>
+
+</html>

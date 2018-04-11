@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="Tammi L. Higley">
+    <meta name="description" content="Retail store that specializes in bicylces">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo2.jpg" alt="The Mountain Spoke logo" width="200" height="133">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">The hub for all your bicycle needs.</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="patty" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adventure_tours.html">Adventure Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <main>
+        <h2 id="contactheader">Contact us for more information</h2>
+        <section id="contactinfo">
+            <p>The Mountain Spoke<br> 3950 Valley Commons Drive<br> Bozeman, MT 59718-5603<br> 406.555.5555
+                <br> questionhub@themountainspoke.com
+                <br>
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.931441035437!2d-111.09290618519502!3d45.67227662755723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523124986991" width="400" height="300" style="border:0" allowfullscreen></iframe>
+            <br><br>
+
+        </section>
+        <div class="contactform">
+            <form action="thank_you.html" method="get" enctype="multipart/form-data" name="contactform" id="contactinfor">
+
+                <fieldset>
+                    <legend><span id="formheader">Contact Information</span></legend>
+                    <label><span>Full Name</span><input name="fullname" type="text" value="" placeholder="Full Name" required></label>
+                    <label><span>Email</span><input name="email" type="email" value="" placeholder="yourname@domain.com" required></label>
+                    <label><span>Phone Number</span><input name="phonenum" type="tel" value="" placeholder="0000000000" ></label>
+                    <label><span>Zip Code</span><input name="zipcode" type="number" value="" placeholder="00000"></label>
+                    <label><span>Addtional Information</span>
+                    <textarea rows="4" cols="50" placeholder="Additional Information"></textarea>
+                    </label><br>
+                    <input type="submit" value="Submit" class="subutton">
+                    <input type="hidden" value="Contact Form" name="subject">
+                    <input name="redirect" type="hidden" value="thank_you.html">
+                </fieldset>
+
+
+
+
+
+            </form>
+
+        </div>
+
+    </main>
+    <footer>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | 3950 Valley Commons Drive | Bozeman, MT | <a href="resources.html">Resources</a> | <a href="video.html">Video</a></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/active.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="Tammi L. Higley">
+    <meta name="description" content="Retail store that specializes in bicylces">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $(".bikeinfo1").hide();
+            });
+
+            $(document).ready(function() {
+                $(".bike1").click(function() {
+                    $(".bikeinfo1").slideToggle("slow");
+                });
+            });
+
+
+            $(document).ready(function() {
+                $(".bikeinfo2").hide();
+            });
+
+            $(document).ready(function() {
+                $(".bike2").click(function() {
+                    $(".bikeinfo2").slideToggle("slow");
+                });
+            });
+
+            $(document).ready(function() {
+                $(".bikeinfo3").hide();
+            });
+
+            $(document).ready(function() {
+                $(".bike3").click(function() {
+                    $(".bikeinfo3").slideToggle("slow");
+                });
+            });
+        </script>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo2.jpg" alt="The Mountain Spoke logo" width="200" height="133">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">The hub for all your bicycle needs.</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="patty" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adventure_tours.html">Adventure Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <img src="images/bikeshop.jpg" alt="Bike Shop">
+        <h2>Sales Shop</h2>
+        <h3>Click on the picture of the bike to learn more about it</h3>
+        <section id=bikesales>
+            <div class="bike1">
+                <img src="images/trekfarley2.jpg" alt="Trek Farley EX 8 - 2018">
+                <h3>Trek Farley EX 8 - 2018<br>$3,499.99</h3>
+                <p class="bikeinfo1">Pair Trek's legendary suspension system with fat tires? Yes, please! The Farley EX 8 does exactly that, for a bike that can tackle any terrain and any conditions with a fun, playful approach. The lightweight Alpha Platinum aluminum frame features a 197mm-wide rear axle with Trek's Active Braking Pivot (ABP), full floater linkage, and Fox's RE:aktiv shock for a supple, responsive suspension system that's even active under braking. RockShox's Bluto adds 120mm of rock and root-swallowing travel as well as a 150 x 15mm thru-axle. 80mm-wide SUNringlé Mulefüt rims bring it all together, with Bontrager's 27.5 x 3.8-inch Hodag tires ensuring a big, stable footprint and loads of grip as you rail berms and fly through rock gardens. SRAM's 11-speed GX drivetrain gives you the range and reliability to ride anywhere and climb anything, while their Level T brakes offer controlled modulation. Wide Bontrager bars and a KS dropper post round out the trail chops on this fat-tired wonder-bike.<br>Pedals Sold Separately
+                </p>
+                </div>
+            <div class="bike2">
+                <img src="images/electramoto1.jpg" alt="Electra Moto 1 - 2016">
+                <h3>Electra Moto 1 - 2016<br>Closeout - $399.99<br>MSRP $549.99</h3>
+                <p class="bikeinfo2">Remember when your biggest worry was getting home before the streetlights came on? The Moto does. We’ve taken our beach cruiser and added a touch of old school BMX and new school off-road to give you the ultimate play bike. You’re not exactly going to be joining the race circuit on it, but you’ll definitely be popping some sick wheelies and hopping every curb in sight. Go ahead and lay down a little rubber if you want to. <br>6061-T6 Aluminun mountain cruiser frame / single-speed w/hayes disc brakes / BMX hollow chromoly crank and sealed cartridge bottom bracket / alloy seat post / 29" x 2.2125" Electra moto knobby tires
+                </p>
+            </div>
+            <div class="bike3">
+                <img src="images/fujiauric.jpg" alt="Fuji Auric 1.5 27.5 - 2016">
+                <h3>Fuji Auric 1.5 27.5 - 2016<br>SAVE 41%<br>$2,199.99<br>MSRP $3,699.99</h3>
+                <p class="bikeinfo3">No great frame would be complete without great parts. The Auric 1.5 starts with 27.5" wheels from DT Swiss wrapped in Schwalbe's Nobby Nic tires. This "do-everything" wheel size is the only choice for the Auric. The RockShox Pike RC Solo Air suspension fork brings a massive 160mm of front travel to match the 160mm of rear travel controlled by the RockShox Monarch RT3. This no-compromise suspension setup and well-balanced wheelset starts to show the true potential of such a well-designed bike. The drivetrain shines with the superb Shimano Deore XT 11-speed setup. The Deore XT double crankset with 36/26T chainrings combined with a 10-40T cassette delivers a massive expansion of gears ensuring you have plenty of power on the downhills without leaving you hurting for the climbs. Matching Deore XT hydraulic disc brakes bring your speed under control with ease and a KS Lev Integra dropper seatpost provides a further performance advantage out on the trails.
+
+                </p>
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <footer>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | 3950 Valley Commons Drive | Bozeman, MT | <a href="resources.html">Resources</a> | <a href="video.html">Video</a></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/active.js"></script>
+
+</body>
+
+</html>
