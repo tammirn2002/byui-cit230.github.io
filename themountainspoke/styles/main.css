@@ -207,9 +207,7 @@ input.subutton {
 /*------RESOURCES-----*/
 
 main #resourceslist {
-    display: flex;
-    list-style-type: circle;
-    margin: 80%;
+
     text-align: left;
 
 }
