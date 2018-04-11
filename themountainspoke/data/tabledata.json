@@ -28,7 +28,7 @@
             "wslime": "$4.99 per wheel",
             "isseat": "$10.00",
             "ichain": "$15.00",
-            "repair": 5,
+            "repair": 17,
             "events": [
                 "Continental Divide Race",
                 "Local Event"
@@ -40,7 +40,7 @@
             "iheadset": "$20.00 - 30.00",
             "irshock": "$20.00 - 30.00",
             "ipedals": "$10.00"
-            "repair": 5,
+            "repair": 10,
             "events": [
             "Continental Divide Race",
             "Local Event"
