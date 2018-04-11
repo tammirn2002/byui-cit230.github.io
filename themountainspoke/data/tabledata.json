@@ -7,9 +7,45 @@
             "suptuneup": "$119.99",
             "repair": 4,
             "events": [
-                "June 20: Continental Divide Race",
+                "Continental Divide Race",
+                "Local Event"
             ]
-        }]
+        },
+        {
+            "bflat": "$15.00",
+            "fhoverhaul": "$15.00",
+            "dtuneup": "$60.00",
+            "twheel": "$12.99",
+            "repair": 5,
+            "events": [
+                "Continental Divide Race",
+                "Local Event"
+            ]
 
+            },
+        {
+            "ispoke": "$5.99 each",
+            "wslime": "$4.99 per wheel",
+            "isseat": "$10.00",
+            "ichain": "$15.00",
+            "repair": 5,
+            "events": [
+                "Continental Divide Race",
+                "Local Event"
+            ]
 
+        },
+        {
+            "ibcantilever": "$20.00",
+            "iheadset": "$20.00 - 30.00",
+            "irshock": "$20.00 - 30.00",
+            "ipedals": "$10.00"
+            "repair": 5,
+            "events": [
+            "Continental Divide Race",
+            "Local Event"
+            ]
+
+        }
+    ]
 }
