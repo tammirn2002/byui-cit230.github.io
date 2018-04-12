@@ -25,10 +25,6 @@ xmlhttp.onreadystatechange = function () {
 
         var irotor = $('#irotor').text(myObj.services[4].irotor);
         var bleedhdb = $('#bleedhdb').text(myObj.services[4].bleedhdb);
-        var ilever = $('#ilever').text(myObj.servies[4].ilever);
-        var ihbrakes = $('#ihbrakes').text(myObj.services[4].ihbrakes);
-        var imbrakes = $('#imbrakes').text(myObj.servies[4].imbrakes);
-        var ibset = $('#ibset').text(myObj.services[4].ibset);
 
     }
 };
