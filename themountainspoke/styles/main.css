@@ -135,7 +135,6 @@ footer > p {
 
 }
 
-.contactform {}
 
 .subutton {
     border: 3px solid #623E05;
@@ -158,13 +157,12 @@ fieldset {
 legend {
     color: #40434A;
     margin-left: 6%;
-    padding: .5em
-    border: #623E05 solid 2px;
+    padding: .5em border: #623E05 solid 2px;
     background-color: #F4D6A6;
     border-radius: .4em;
     border: #623E05 solid 2px;
     font-size: 2em;
-    padding : 1em;
+    padding: 1em;
     box-shadow: 5px 5px 10px #623E05;
 }
 
@@ -308,8 +306,6 @@ main #resourceslist {
 
 
 
-
-
 /*------ADVENTURE-TOURS------*/
 
 .fa-bicycle {
@@ -397,5 +393,4 @@ main div img {
     background-color: #F4D6A6;
 
 }
-
 
